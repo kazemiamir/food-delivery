@@ -1,5 +1,11 @@
+@media (max-width:1200px){
+    .container_site {
+        margin: 0 20px;
+}
+}
 @media (max-width:1042px) {
     .container_site {
+        padding: 0;
         margin: 0 20px;
 }
     .action_order {
@@ -70,6 +76,10 @@
     .fixed_box_delivery div span {
         font-size: 19px;
     }
+    
+    .row_grid_food_products{
+        grid-template-columns:repeat(2,1fr);
+    }
 }
 
 @media (min-width:834px) {
@@ -119,5 +129,10 @@
 @media (min-width:677px){
     .order_food_mobile{
         display:none;
+    }
+}
+@media (max-width:500px){
+    .row_grid_food_products{
+        grid-template-columns:repeat(1,100%);
     }
 }
