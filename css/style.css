@@ -6,7 +6,7 @@
 
 body {
     font-family: poppins;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 
 ul {
@@ -73,7 +73,7 @@ img {
 }
 
 .container_site {
-    margin: 0 200px;
+    margin: 0 110px;
     padding: 0 0.5rem;
 }
 
@@ -323,13 +323,17 @@ img {
     margin-left: 5px;
 }
 .row_title_section_food h4{
+    text-align: start;
+}
+.title_section{
+    width: max-content;
     position:relative;
     color: var(--color_C90000);
     font-size:48px;
     font-weight: 600;
 }
 .line_bottom_row_title{
-    width:137px;
+    width:100%;
     height:9px;
     background-color:#FFF6A3;
     position:absolute;
@@ -445,4 +449,210 @@ img {
     -o-border-radius: 8px;
     border: none;
     padding: 10px;
+}
+.see_all_food{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.see_all_food a{
+    color: var(--color_504F4F);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.section_off{
+    margin-top: 10rem;
+}
+.row_title_section_off{
+    display: flex;
+    justify-content: center;
+}
+.grid_foods_off{
+    margin-top: 2rem;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    overflow-x: auto;
+    padding: 20px 20px;
+}
+.item_food_off{
+    border: 1px solid var(--color_E3E3E3);
+    background-color: var(--color_F1F1F1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 330px;
+    padding: 2rem 0 2rem 1.2rem;
+    overflow: hidden;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    cursor: pointer;
+}
+.item_food_off:hover{
+    background-color: var(--color_C90000);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.item_food_off:hover button{
+    cursor: pointer;
+}
+.item_food_off:hover h6{
+    color: var(--color_FFC300);
+}
+.item_food_off:hover p,.item_food_off:hover .title_sm_item_off span:first-child,.item_food_off:hover del{
+    color: var(--color_FFF);
+}
+.item_food_off:hover .title_sm_item_off span:last-child{
+    background-color: var(--color_FFF);
+}
+.item_food_off:hover .price_off span{
+    color: var(--color_FFC300);
+}
+.item_food_off:hover button{
+    color: var(--color_323232);
+    background-color: var(--color_FFF);
+}
+.item_food_off:hover button svg path{
+    fill: var(--color_323232);
+}
+.title_sm_item_off{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+.title_sm_item_off span:first-child{
+    color: var(--color_323232);
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+.title_sm_item_off span:last-child{
+    display: inline-block;
+    width: 73%;
+    background-color: var(--color_7D7C7C);
+    height: 1px;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+.row_info_item_food_off{
+    display: flex;
+}
+
+.right_item_food_off img{
+    width: 150px;
+    position: relative;
+    top: 36%;
+    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+.left_item_food_off{
+    width: 95%;
+}
+.left_item_food_off h6{
+    color: var(--color_C90000);
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.9rem 0;
+    line-height: 2.2rem;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+.left_item_food_off p{
+    color: var(--color_504F4F);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 80%;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+    height: 70px;
+    overflow:hidden;
+}
+.price_off del{
+    color: var(--color_7D7C7C);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+.price_off span{
+    color: var(--color_C90000);
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 0.2rem;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+.left_item_food_off button{
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--color_504F4F);
+    color: var(--color_F1F1F1);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
+}
+.left_item_food_off button span{
+    display: inline-block;
+    height: 24px;
+    line-height: 27px;
+}
+.item_food_off button svg path{
+    fill: var(--color_E3E3E3);
+    transition: all 250ms ease-in;
+    -webkit-transition: all 250ms ease-in;
+    -moz-transition: all 250ms ease-in;
+    -ms-transition: all 250ms ease-in;
+    -o-transition: all 250ms ease-in;
 }
